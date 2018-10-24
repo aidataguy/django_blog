@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django Blog</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://fonts.google.com/css?family=Source+Sans+Pro:400">
+</head>
+<body>
+<header>
+    <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+</header>
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
