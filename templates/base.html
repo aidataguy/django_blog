@@ -2,8 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Django Blog</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -11,7 +10,12 @@
 </head>
 <body>
 <header>
-    <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+    <div class="nav-left">
+        <a href="{% url 'home' %}">Django Blog</a>
+    </div>
+    <div class="nav-right">
+        <a href="{% url 'post_new' %}">+ New Blog Post</a>
+    </div>
 </header>
 {% block content %}
 
