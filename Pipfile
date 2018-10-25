@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 pillow = "*"
 gunicorn = "*"
+django-googledrive-storage = "*"
+django-sslserver = "*"
 
 [dev-packages]
 pylint = "*"
